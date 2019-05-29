@@ -1,0 +1,14 @@
+.header-title {
+  font-size: 30px;
+  padding: 15px;
+  display: inline-block;
+}
+.header-bar {
+  display: inline-block;
+}
+
+.header-icon {
+  padding: 10px;
+  display: block;
+  float: right;
+}
