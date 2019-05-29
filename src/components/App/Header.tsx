@@ -1,6 +1,5 @@
 import * as React from "react";
 import AppBar from "@material-ui/core/AppBar";
-import Button from "@material-ui/core/Button";
 import Reorder from "@material-ui/icons/Reorder";
 
 import "./Header.css";
@@ -10,18 +9,8 @@ interface Props {
   
 }
 
-interface State {
-  value: number;
-}
 
-export default class Header extends React.Component<Props, State> {
-  constructor(props: any) {
-    super(props);
-    this.state = {
-      value: 0
-    };
-  }
-
+export default class Header extends React.Component<Props> {
   render() {
     return(
       <header>
@@ -39,7 +28,4 @@ export default class Header extends React.Component<Props, State> {
     )
   }
 
-  _handleOnClick(value: number) {
-    this.setState({ value });
-  }
 }
