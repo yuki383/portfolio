@@ -6,23 +6,36 @@ import "./Header.css";
 import { IconButton, Toolbar, Typography, makeStyles, Theme, } from "@material-ui/core";
 import { createStyles } from "@material-ui/styles";
 
+const useStyles = makeStyles((theme: Theme) => 
+createStyles({
+  root: {
+    flexGrow: 1,
+    background: theme.palette.primary.main,
+  },
+  title: {
+    flexGrow: 1,
+  },
+  icon: {
+    color: "white"
+  }
+}))
+
 interface Props {
 
 }
 
 const Header: React.FC = () => {
+  const classes = useStyles();
 
   return (
-    <div >
-      <AppBar position="static" className="header-bar" >
+      <AppBar position="fixed" classes={{ root: classes.root }} >
         <Toolbar >
-          <Typography variant="h4" className="header-title" >小久保祐希のポートフォリオ</Typography>
+          <Typography variant="h4" className={classes.title} >my portfolio</Typography>
           <IconButton edge="end" >
-            <Reorder fontSize="large" className="reorder-icon" />
+            <Reorder fontSize="large" className={classes.icon} />
           </IconButton>
         </Toolbar>
       </AppBar>
-    </div>
   )
 
 }
