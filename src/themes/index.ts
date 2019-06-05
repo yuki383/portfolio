@@ -19,7 +19,7 @@ export default createMuiTheme({
     },
     background: {
       paper: "#fff",
-      default: "#E1E2E1"
+      default: "#fafafa"
     }
   },
 })    
