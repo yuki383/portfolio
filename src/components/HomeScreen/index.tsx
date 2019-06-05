@@ -1,20 +1,18 @@
 import * as React from "react";
-import { Card, CardContent } from "@material-ui/core";
+import TopCard from "../utils/TopCard";
 
 interface Props {
-  
-}
-
-export default class HomeScreen extends React.Component<Props> {
-
-  render() {
-    return(
-        <Card>
-          <CardContent>
-
-          </CardContent>
-        </Card>
-    )
-  }
 
 }
+
+const HomeScreen: React.FC = () => {
+
+  return (
+    <div>
+      <TopCard title="top" />
+    </div>
+  )
+
+}
+
+export default HomeScreen;

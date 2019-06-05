@@ -11,7 +11,7 @@ export default class TopCard extends React.Component<Props> {
     return(
       <Card>
         <CardContent>
-          <Typography>{title}</Typography>
+          <Typography variant="h2" >{title}</Typography>
         </CardContent>
       </Card>
     )
