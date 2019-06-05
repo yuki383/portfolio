@@ -2,7 +2,6 @@ import * as React from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Reorder from "@material-ui/icons/Reorder";
 
-import "./Header.css";
 import { IconButton, Toolbar, Typography, makeStyles, Theme, } from "@material-ui/core";
 import { createStyles } from "@material-ui/styles";
 
@@ -28,9 +27,9 @@ const Header: React.FC = () => {
   const classes = useStyles();
 
   return (
-      <AppBar position="fixed" classes={{ root: classes.root }} >
+      <AppBar position="relative" classes={{ root: classes.root }} >
         <Toolbar >
-          <Typography variant="h4" className={classes.title} >my portfolio</Typography>
+          <Typography variant="h4" className={classes.title} noWrap >my portfolio</Typography>
           <IconButton edge="end" >
             <Reorder fontSize="large" className={classes.icon} />
           </IconButton>

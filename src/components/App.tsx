@@ -1,16 +1,19 @@
 import * as React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./App/Header";
-import { MuiThemeProvider } from "@material-ui/core/styles";
 import themes from "../themes";
-import HomeScreen from "./HomeScreen";
-import { Container } from "@material-ui/core";
+import HomeScreen from "./Main";
 import { ThemeProvider } from "@material-ui/styles";
+import { CssBaseline } from "@material-ui/core";
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={themes} >
-      <Header />
-      <HomeScreen />
+      <Router>
+        <CssBaseline />
+        <Header />
+        <HomeScreen />
+      </Router>
     </ThemeProvider>
   )
 }
