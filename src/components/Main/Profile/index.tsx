@@ -20,6 +20,10 @@ const profiles = [
     title: "学校",
     content: "N高等学校"
   },
+  {
+    title: "スキル",
+    content: "JavaScript / TypeScript / React / Redux / Scala / playframework"
+  }
 
 ]
 
