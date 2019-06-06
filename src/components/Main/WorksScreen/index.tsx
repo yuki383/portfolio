@@ -1,7 +1,7 @@
 import * as React from "react";
 import ScreenTop from "../../utils/ScreenTop";
 import WorksGrid from "./WorksGrid";
-import imageOne from "../../../images/hirameki_man.png";
+import imageOne from "../../../images/screenshot.png";
 import imageTwo from "../../../images/pose_atama_kakaeru_man_money.png";
 import imageThree from "../../../images/pose_atama_kakaeru_woman_money.png";
 import { Container, Theme, createStyles } from "@material-ui/core";

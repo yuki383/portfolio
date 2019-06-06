@@ -5,10 +5,13 @@ import { Work } from "../../../types";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     cardMedia: {
-      paddingTop: "56.25%"
+      paddingTop: "56.25%",
+      backgroundSize: "contain"
     },
     description: {
       whiteSpace: "pre-line"
+    },
+    image: {
     }
   })
 )
