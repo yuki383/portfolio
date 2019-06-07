@@ -2,7 +2,6 @@ import * as React from "react";
 import ScreenTop from "../../utils/ScreenTop";
 import WorksGrid from "./WorksGrid";
 import { Container, Theme, createStyles } from "@material-ui/core";
-import { Work } from "../../../types";
 import works from "../../../informations/works";
 import { makeStyles } from "@material-ui/styles";
 
