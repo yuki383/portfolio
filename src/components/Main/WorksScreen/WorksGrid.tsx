@@ -1,6 +1,8 @@
 import * as React from "react";
-import { Grid, Card, CardMedia, CardContent, Typography, makeStyles, Theme, createStyles } from "@material-ui/core";
+import { Grid, Card, CardMedia, CardContent, Typography, makeStyles, Theme, createStyles, CardActions, Button } from "@material-ui/core";
 import { Work } from "../../../types";
+
+declare let window: any;
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -11,17 +13,24 @@ const useStyles = makeStyles((theme: Theme) =>
     description: {
       whiteSpace: "pre-line"
     },
-    image: {
+    cardContent: {
+      flexGrow: 1
+    },
+    card: {
+      height: "100%",
+      display: "flex",
+      flexDirection: "column"
     }
   })
 )
 
 interface Props {
   works: Work[];
+  isDemo: boolean;
 }
 
 const WorksGrid: React.FC<Props> = ( props ) => {
-  const { works, } = props;
+  const { works, isDemo } = props;
   const classes = useStyles();
 
   return(
@@ -29,26 +38,39 @@ const WorksGrid: React.FC<Props> = ( props ) => {
       <Grid container spacing={2} justify="center" >
         {works.map(work => (
           <Grid item key={work.id} xs={12} sm={6} >
-            <Card >
+            <Card className={classes.card} >
               <CardMedia
                 className={classes.cardMedia}
-                image={work.path}
+                image={work.image}
                 title={work.title}
               />
-              <CardContent>
-                <Typography gutterBottom variant="h5">
-                  {work.title}
-                </Typography>
-                <Typography className={classes.description} >
-                  {work.description}
-                </Typography>
+              <CardContent className={classes.cardContent} >
+                  <Typography gutterBottom variant="h5" component="h2">
+                    {work.title}
+                  </Typography>
+                  <Typography className={classes.description} >
+                    {work.description}
+                  </Typography>
+
               </CardContent>
+              <CardActions>
+                <Button color="primary" onClick={() => redirect(work.demo)} >
+                  demo
+                </Button>
+                <Button color="primary" onClick={() => redirect(work.source)}>
+                  source
+                </Button>
+              </CardActions>
             </Card>
           </Grid>
         ))}
       </Grid>
     </div>
   )
+}
+
+const redirect = (url: string) => {
+  window.open(url);
 }
 
 export default WorksGrid;

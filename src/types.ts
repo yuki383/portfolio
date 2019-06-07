@@ -2,5 +2,7 @@ export interface Work {
   id: number;
   title: string;
   description: string;
-  path: string;
+  image: string;
+  demo: string;
+  source: string;
 }
