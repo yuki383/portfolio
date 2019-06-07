@@ -30,7 +30,7 @@ interface Props {
 }
 
 const WorksGrid: React.FC<Props> = ( props ) => {
-  const { works, isDemo } = props;
+  const { works,  } = props;
   const classes = useStyles();
 
   return(
@@ -54,12 +54,10 @@ const WorksGrid: React.FC<Props> = ( props ) => {
 
               </CardContent>
               <CardActions>
-                <Button color="primary" onClick={() => redirect(work.demo)} >
-                  demo
+                <Button color="primary" onClick={() => redirect(work.more)} >
+                  More
                 </Button>
-                <Button color="primary" onClick={() => redirect(work.source)}>
-                  source
-                </Button>
+                {demoButton(work)}
               </CardActions>
             </Card>
           </Grid>
@@ -71,6 +69,14 @@ const WorksGrid: React.FC<Props> = ( props ) => {
 
 const redirect = (url: string) => {
   window.open(url);
+}
+
+const demoButton = (work: Work) => {
+  if(work.demo) {
+    return <Button color="primary" onClick={() => redirect(work.demo as string)} >Demo</Button>
+  } else {
+    return <></>
+  }
 }
 
 export default WorksGrid;

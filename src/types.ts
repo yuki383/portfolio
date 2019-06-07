@@ -3,6 +3,6 @@ export interface Work {
   title: string;
   description: string;
   image: string;
-  demo: string;
-  source: string;
+  more: string;
+  demo?: string;
 }
