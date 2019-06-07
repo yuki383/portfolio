@@ -29,7 +29,7 @@ const profiles = [
 
 const Profiles: React.FC = () => {
   const classes = useStyle();
-  const rows = profiles.map(profile => <ProfileRow {...profile} />)
+  const rows = profiles.map(profile => <ProfileRow key={profile.title} {...profile} />)
   return(
     <div className={classes.root} >
       <ScreenTop title="Profile" />

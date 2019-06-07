@@ -24,7 +24,7 @@ const Navs: React.FC<Props> = ( props ) => {
   const classes = useStyles();
 
   return(
-    <Grid item key={title}>
+    <Grid item >
         <Link to={path} className={classes.link} >
           <Button size="large" >
             <Typography variant="button" className={classes.title} >

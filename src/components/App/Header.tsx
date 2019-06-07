@@ -55,7 +55,7 @@ const Header: React.FC = () => {
           </Typography>
         </div>
         <Grid container className={classes.navs} >
-          {navs.map(nav => <Navs title={nav.title} path={nav.path} />)}
+          {navs.map(nav => <Navs key={nav.title} title={nav.title} path={nav.path} />)}
         </Grid>
         <IconButton edge="end" >
           <Reorder fontSize="large" className={classes.icon} />
