@@ -6,3 +6,8 @@ export interface Work {
   more: string;
   demo?: string;
 }
+
+export interface Profile {
+  title: string;
+  content: string;
+}
