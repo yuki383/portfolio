@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.2df951f5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.2df951f5.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f818c301.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f818c301.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
     "static/js/2.9aef084e.chunk.js": "/portfolio/static/js/2.9aef084e.chunk.js",
     "static/js/2.9aef084e.chunk.js.map": "/portfolio/static/js/2.9aef084e.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.d76123864ed666bf4ca9656c4028965f.js": "/portfolio/precache-manifest.d76123864ed666bf4ca9656c4028965f.js",
+    "precache-manifest.0ac76286217c34a083469b6eb47c1c46.js": "/portfolio/precache-manifest.0ac76286217c34a083469b6eb47c1c46.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/media/allowance-management.png": "/portfolio/static/media/allowance-management.8897f59e.png",
     "static/media/calclator.png": "/portfolio/static/media/calclator.3915954f.png"
