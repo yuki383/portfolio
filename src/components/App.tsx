@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Header from "./App/Header";
 import themes from "../themes";
 import HomeScreen from "./Main";
@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Router>
         <CssBaseline />
         <Header />
-        <HomeScreen />
+        <Route path="/portfolio" component={HomeScreen} />
       </Router>
     </ThemeProvider>
   )

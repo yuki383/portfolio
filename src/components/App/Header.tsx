@@ -31,11 +31,10 @@ const useStyles = makeStyles((theme: Theme) =>
 const navs = [
   {
     title: "Home",
-    path: "/",
   },
   {
     title: "Works",
-    path: "/works"
+    query: "works"
   }
 ]
 
@@ -51,11 +50,11 @@ const Header: React.FC = () => {
       <Toolbar >
         <div >
           <Typography variant="h4" className={classes.title} noWrap >
-            <Link to="/" className={classes.link}>my portfolio</Link>
+            <Link to="/portfolio" className={classes.link}>my portfolio</Link>
           </Typography>
         </div>
         <Grid container className={classes.navs} >
-          {navs.map(nav => <Navs key={nav.title} title={nav.title} path={nav.path} />)}
+          {navs.map(nav => <Navs key={nav.title} title={nav.title} query={nav.query} />)}
         </Grid>
         <IconButton edge="end" >
           <Reorder fontSize="large" className={classes.icon} />
