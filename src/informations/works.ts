@@ -1,6 +1,7 @@
 import { Work } from "../types";
 import calclatorImage from "../images/calclator.png";
 import allowanceManagementImage from "../images/allowance-management.png";
+import portfolioImage from "../images/portfolio.png";
 
 const works: Work[] = [
   {
@@ -18,6 +19,13 @@ const works: Work[] = [
     image: allowanceManagementImage,
     more: "https://github.com/yuki383/allowance-management",
   },
+  {
+    id: 2,
+    title: "ポートフォリオ",
+    description: "ポートフォリオのサイトです。 \n MaterialUIというライブラリを学習しながら作成しました。　",
+    image: portfolioImage,
+    more: "https://github.com/yuki383/portfolio",
+  }
 ];
 
 export default works;
