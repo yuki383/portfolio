@@ -16,14 +16,12 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface Props {
   title: string;
-  query?: string;
+  path: string;
 }
 
 const ListItemButton: React.FC<Props> = (props) => {
-  const classes = useStyles();
-  const { title, query, } = props;
-  const path = query ? `/portfolio?kind=${query}` : "/portfolio";
-
+  const classes = useStyles({});
+  const { title, path, } = props;
 
   return(
     <>

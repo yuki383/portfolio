@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
 interface Props {
   navs: {
     title: string;
-    query?: string;
+    path: string;
   }[];
   toggleDrawer: (boolean: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => void | undefined;
 }

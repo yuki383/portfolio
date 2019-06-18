@@ -32,10 +32,11 @@ const useStyles = makeStyles((theme: Theme) =>
 const navs = [
   {
     title: "Home",
+    path: "",
   },
   {
     title: "Works",
-    query: "works"
+    path: "works",
   }
 ]
 
@@ -44,7 +45,7 @@ interface Props {
 }
 
 const Header: React.FC = () => {
-  const classes = useStyles();
+  const classes = useStyles({});
 
   const [isOpen, setIsOpen] = React.useState(false);
   const toggleDrawer = (boolean: boolean) => (event: React.KeyboardEvent | React.MouseEvent,) => {
@@ -68,11 +69,11 @@ const Header: React.FC = () => {
         </Drawer>
         <div >
           <Typography variant="h4" className={classes.title} noWrap >
-            <Link to="/portfolio" className={classes.link}>my portfolio</Link>
+            <Link to="" className={classes.link}>my portfolio</Link>
           </Typography>
         </div>
         <Grid container className={classes.navs} >
-          {navs.map(nav => <Navs key={nav.title} title={nav.title} query={nav.query} />)}
+          {navs.map(nav => <Navs key={nav.title} title={nav.title} path={nav.path} />)}
         </Grid>
       </Toolbar>
     </AppBar>

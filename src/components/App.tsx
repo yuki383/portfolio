@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Header from "./App/Header";
 import themes from "../themes";
 import HomeScreen from "./Main";
@@ -9,11 +9,11 @@ import { CssBaseline } from "@material-ui/core";
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={themes} >
-      <Router>
+      <HashRouter>
         <CssBaseline />
         <Header />
-        <Route path="/portfolio" component={HomeScreen} />
-      </Router>
+        <HomeScreen />
+      </HashRouter>
     </ThemeProvider>
   )
 }

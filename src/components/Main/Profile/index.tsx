@@ -13,7 +13,7 @@ const useStyle = makeStyles((theme: Theme) =>
 }));
 
 const Profiles: React.FC = () => {
-  const classes = useStyle();
+  const classes = useStyle({});
   const rows = profiles.map(profile => <ProfileRow key={profile.title} {...profile} />)
   return(
     <div className={classes.root} >

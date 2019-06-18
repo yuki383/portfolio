@@ -16,13 +16,12 @@ const useStyles = makeStyles((theme: Theme) =>
 
 interface Props {
   title: string;
-  query?: string;
+  path: string;
 }
 
 const Navs: React.FC<Props> = ( props ) => {
-  const { title, query } = props;
-  const classes = useStyles();
-  const path = query ? `/portfolio?kind=${query}` : "/portfolio";
+  const { title, path } = props;
+  const classes = useStyles({});
 
   return(
     <Grid item >
