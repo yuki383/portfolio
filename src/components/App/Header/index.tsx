@@ -59,7 +59,7 @@ const Header: React.FC = () => {
   
 
   return (
-    <AppBar position="relative" classes={{ root: classes.root }} >
+    <AppBar position="relative" className={classes.root} >
       <Toolbar >
         <IconButton edge="start" onClick={toggleDrawer(true)} >
           <Reorder className={classes.icon} />
