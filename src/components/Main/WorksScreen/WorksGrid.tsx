@@ -55,7 +55,7 @@ const WorksGrid: React.FC<Props> = ( props ) => {
               </CardContent>
               <CardActions>
                 <Button color="primary" onClick={() => redirect(work.more)} >
-                  More
+                  GitHub
                 </Button>
                 {demoButton(work)}
               </CardActions>
