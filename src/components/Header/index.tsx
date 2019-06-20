@@ -26,7 +26,15 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     navs: {
       padding: theme.spacing(1, 3),
+      [theme.breakpoints.down(769)]: {
+        display: "none",
+      },
     },
+    iconButton: {
+      [theme.breakpoints.up(769)]: {
+        display: "none",
+      }
+    }
   }))
 
 const navs = [
@@ -39,10 +47,6 @@ const navs = [
     path: "works",
   }
 ]
-
-interface Props {
-
-}
 
 const Header: React.FC = () => {
   const classes = useStyles({});
@@ -61,7 +65,7 @@ const Header: React.FC = () => {
   return (
     <AppBar position="relative" className={classes.root} >
       <Toolbar >
-        <IconButton edge="start" onClick={toggleDrawer(true)} >
+        <IconButton className={classes.iconButton} edge="start" onClick={toggleDrawer(true)} >
           <Reorder className={classes.icon} />
         </IconButton>
         <Drawer anchor="left" open={isOpen} onClose={toggleDrawer(false)} >

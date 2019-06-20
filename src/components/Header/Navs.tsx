@@ -7,6 +7,7 @@ const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     title: {
       color: theme.palette.text.secondary,
+      fontSize: "large"
     },
     link: {
       textDecoration: "none",

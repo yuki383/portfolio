@@ -1,6 +1,6 @@
 import * as React from "react";
 import { HashRouter } from "react-router-dom";
-import Header from "./App/Header";
+import Header from "./Header";
 import themes from "../themes";
 import HomeScreen from "./Main";
 import { ThemeProvider } from "@material-ui/styles";

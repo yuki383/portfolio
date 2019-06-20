@@ -1,6 +1,6 @@
 import * as React from "react";
 import { List, makeStyles, Theme, createStyles } from "@material-ui/core";
-import ListItemButton from "../../utils/ListItemButton";
+import ListItemButton from "../utils/ListItemButton";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
