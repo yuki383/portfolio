@@ -13,6 +13,3 @@ URL: https://yuki383.github.io/portfolio/#/
 - typescript@3.4.5
 - @material-ui/core@4.0.1
 - @material-ui/icons@4.0.1
-
-
-
