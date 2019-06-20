@@ -2,6 +2,7 @@ import * as React from "react";
 import { Route } from "react-router-dom";
 import Profiles from "./Profile";
 import Works from "./WorksScreen";
+import Contact from "./Contacts";
 
 interface Props {
 
@@ -12,6 +13,7 @@ const HomeScreen: React.FC<Props> = ( props ) => {
     <main>
       <Route exact path="/" component={Profiles} />
       <Route path="/works" component={Works} />
+      <Route path="/contact" component={Contact} />
     </main>
 
   )

@@ -11,3 +11,9 @@ export interface Profile {
   title: string;
   content: string;
 }
+
+export interface Contacts {
+  iconName: string;
+  kind: string;
+  url: string;
+}
