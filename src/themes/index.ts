@@ -23,4 +23,9 @@ export default createMuiTheme({
       default: "#fafafa"
     }
   },
+  typography: {
+    button: {
+      textTransform: "none",
+    },
+  },
 })    
