@@ -22,7 +22,7 @@ const works: Work[] = [
   {
     id: 2,
     title: "ポートフォリオ",
-    description: "ポートフォリオのサイトです。 \n MaterialUIというライブラリを学習しながら作成しました。　",
+    description: "ポートフォリオのサイトです。 \n MaterialUIというライブラリを利用し、レスポンシブデザインに対応させました。　",
     image: portfolioImage,
     more: "https://github.com/yuki383/portfolio",
   }
