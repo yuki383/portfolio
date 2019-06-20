@@ -6,10 +6,6 @@ URL: https://yuki383.github.io/portfolio/#/
 
 ライブラリにMaterial UIを利用しているため、レスポンシブデザインになっています。
 
-![ポートフォリオプロファイル](/Users/kokuboyuuki/Pictures/screenshots/ポートフォリオプロファイル.png)
-
-
-
 ## 使用したライブラリ
 
 - react@16.8.6
