@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.670385f6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.670385f6.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f9e9aad6.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f9e9aad6.chunk.js.map",
     "runtime~main.js": "/portfolio/static/js/runtime~main.f308c8e6.js",
     "runtime~main.js.map": "/portfolio/static/js/runtime~main.f308c8e6.js.map",
-    "static/js/2.5412c372.chunk.js": "/portfolio/static/js/2.5412c372.chunk.js",
-    "static/js/2.5412c372.chunk.js.map": "/portfolio/static/js/2.5412c372.chunk.js.map",
+    "static/js/2.d9830063.chunk.js": "/portfolio/static/js/2.d9830063.chunk.js",
+    "static/js/2.d9830063.chunk.js.map": "/portfolio/static/js/2.d9830063.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.d351a530a7f1df99e892a5c32311700a.js": "/portfolio/precache-manifest.d351a530a7f1df99e892a5c32311700a.js",
+    "precache-manifest.021cdfd479fff06166658cec18193ee3.js": "/portfolio/precache-manifest.021cdfd479fff06166658cec18193ee3.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/media/allowance-management.png": "/portfolio/static/media/allowance-management.8897f59e.png",
     "static/media/calclator.png": "/portfolio/static/media/calclator.3915954f.png",
