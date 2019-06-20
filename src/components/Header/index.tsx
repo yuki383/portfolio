@@ -26,12 +26,12 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     navs: {
       padding: theme.spacing(1, 3),
-      "@media (max-width:768px)": {
+      [theme.breakpoints.down(769)]: {
         display: "none",
       },
     },
     iconButton: {
-      "@media (min-width:769px)": {
+      [theme.breakpoints.up(769)]: {
         display: "none",
       }
     }
