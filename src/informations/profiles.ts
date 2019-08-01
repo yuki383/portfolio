@@ -11,7 +11,7 @@ const profiles: Profile[] = [
   },
   {
     title: "スキル",
-    content: "JavaScript / TypeScript / React / Redux / Scala / playframework"
+    content: "JavaScript / TypeScript / React / Redux / Golang"
   },
   {
     title: "やりたいこと",
